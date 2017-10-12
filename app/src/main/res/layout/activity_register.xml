@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mouad.facebookimages.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="360dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="358dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/etName"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="358dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignStart="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="358dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="196dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignStart="@+id/bRegister" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="358dp"
+        android:layout_height="43dp"
+        android:text="Register"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="275dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
